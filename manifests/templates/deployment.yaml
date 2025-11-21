@@ -1,0 +1,25 @@
+---
+# Source: helm for kubernetes/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kikikikikikikiki
+  labels:
+    app: kikikikikikikiki
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: kikikikikikikiki
+  template:
+    metadata:
+      labels:
+        app: kikikikikikikiki
+    spec:
+      containers:
+        - name: kikikikikikikiki
+          image: docker.io/phengbunath/kikikikikikikiki:1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
